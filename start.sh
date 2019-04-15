@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -rf core.*
-rm -rf main
-gcc -g main.c -o main
-./main
+rm -rf bin_tree
+gcc -g binary_tree.c -o bin_tree
+./bin_tree
 
