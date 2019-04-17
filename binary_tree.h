@@ -1,7 +1,7 @@
 #ifndef __BINARY_TREE_H
 #define __BINARY_TREE_H
 
-#define STK_QUE_LEN 100
+#define STK_QUE_LEN 150
 
 typedef struct tree_s
 {
@@ -24,6 +24,12 @@ typedef struct stack_s
     int button;
 }stk_t;
 
-typedef int (* handler_t)(int id);
+typedef struct
+{
+	tree_t * tnode;
+	int flag;
+}tpath_t;
+
+typedef int (* handler_t)(tree_t * tnode, va_list * pargs);
 
 #endif
